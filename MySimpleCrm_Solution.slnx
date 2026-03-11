@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CommonLibrary/CommonLibrary.csproj" />
+  <Project Path="DataService/DataService.csproj" />
+  <Project Path="MySimpleCrm_Avalonia/MySimpleCrm_Avalonia.csproj" />
+</Solution>
