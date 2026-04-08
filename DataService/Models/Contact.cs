@@ -1,4 +1,5 @@
 using System;
+using CommonLibrary;
 
 namespace DataService.Models;
 
@@ -7,7 +8,7 @@ public record Contact
     public Guid Id { get; init; } = Guid.NewGuid();
     public string? FirstName { get; init; }
     public string? LastName { get; init; }
-    public string? ContactType { get; init; }
+    public ContactType? ContactType { get; init; }
     public string? Email { get; init; }
     public string? Phone { get; init; }
 

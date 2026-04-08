@@ -106,45 +106,52 @@ WHERE Id = @Id";
         await cmd.ExecuteNonQueryAsync();
     }
 
-+    private static void AddParameter(DbCommand cmd, string name, object? value)
-+    {
-+        var p = cmd.CreateParameter();
-+        p.ParameterName = "@" + name;
-+        p.Value = value ?? DBNull.Value;
-+        cmd.Parameters.Add(p);
-+    }
-+
-+    private static Account ReadAccount(DbDataReader reader)
-+    {
-+        var id = reader.GetGuid(reader.GetOrdinal("Id"));
-+        var name = reader.GetString(reader.GetOrdinal("Name"));
-+        var industry = reader.IsDBNull(reader.GetOrdinal("Industry")) ? null : reader.GetString(reader.GetOrdinal("Industry"));
-+        var website = reader.IsDBNull(reader.GetOrdinal("Website")) ? null : reader.GetString(reader.GetOrdinal("Website"));
-+        var actionId = reader.IsDBNull(reader.GetOrdinal("ActionId")) ? null : reader.GetGuid(reader.GetOrdinal("ActionId"));
-+        var createdById = reader.IsDBNull(reader.GetOrdinal("CreatedById")) ? null : reader.GetGuid(reader.GetOrdinal("CreatedById"));
-+        var modifiedById = reader.IsDBNull(reader.GetOrdinal("ModifiedById")) ? null : reader.GetGuid(reader.GetOrdinal("ModifiedById"));
-+        var createdAt = reader.GetDateTime(reader.GetOrdinal("CreatedAt"));
-+        var modifiedAt = reader.IsDBNull(reader.GetOrdinal("ModifiedAt")) ? null : reader.GetDateTime(reader.GetOrdinal("ModifiedAt"));
-+        var deletedById = reader.IsDBNull(reader.GetOrdinal("DeletedById")) ? null : reader.GetGuid(reader.GetOrdinal("DeletedById"));
-+        var deletedAt = reader.IsDBNull(reader.GetOrdinal("DeletedAt")) ? null : reader.GetDateTime(reader.GetOrdinal("DeletedAt"));
-+        var createdOnBehalfById = reader.IsDBNull(reader.GetOrdinal("CreatedOnBehalfById")) ? null : reader.GetGuid(reader.GetOrdinal("CreatedOnBehalfById"));
-+        var modifiedOnBehalfById = reader.IsDBNull(reader.GetOrdinal("ModifiedOnBehalfById")) ? null : reader.GetGuid(reader.GetOrdinal("ModifiedOnBehalfById"));
-+
-+        return new Account
-+        {
-+            Id = id,
-+            Name = name,
-+            Industry = industry,
-+            Website = website,
-+            ActionId = actionId,
-+            CreatedById = createdById,
-+            ModifiedById = modifiedById,
-+            CreatedAt = createdAt,
-+            ModifiedAt = modifiedAt,
-+            DeletedById = deletedById,
-+            DeletedAt = deletedAt,
-+            CreatedOnBehalfById = createdOnBehalfById,
-+            ModifiedOnBehalfById = modifiedOnBehalfById
-+        };
-+    }
- }
+    private static void AddParameter(DbCommand cmd, string name, object? value)
+    {
+        var p = cmd.CreateParameter();
+        p.ParameterName = "@" + name;
+        p.Value = value ?? DBNull.Value;
+        cmd.Parameters.Add(p);
+    }
+
+    /// <summary>
+    /// Creates an Account instance by reading the current row from the specified data reader.
+    /// </summary>
+    /// <remarks>The method expects the reader to contain columns matching the Account properties. Nullable
+    /// database fields are mapped to default values or null as appropriate.</remarks>
+    /// <param name="reader">The data reader positioned at the row containing account data. Must not be null.</param>
+    /// <returns>An Account object populated with values from the current row of the reader.</returns>
+    private static Account ReadAccount(DbDataReader reader)
+    {
+        var id = reader.GetGuid(reader.GetOrdinal("Id"));
+        var name = reader.GetString(reader.GetOrdinal("Name"));
+        var industry = reader.IsDBNull(reader.GetOrdinal("Industry")) ? null : reader.GetString(reader.GetOrdinal("Industry"));
+        var website = reader.IsDBNull(reader.GetOrdinal("Website")) ? null : reader.GetString(reader.GetOrdinal("Website"));
+        var actionId = reader.IsDBNull(reader.GetOrdinal("ActionId")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("ActionId"));
+        var createdById = reader.IsDBNull(reader.GetOrdinal("CreatedById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("CreatedById"));
+        var modifiedById = reader.IsDBNull(reader.GetOrdinal("ModifiedById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("ModifiedById"));
+        var createdAt = reader.GetDateTime(reader.GetOrdinal("CreatedAt"));
+        var modifiedAt = reader.IsDBNull(reader.GetOrdinal("ModifiedAt")) ? DateTime.MinValue : reader.GetDateTime(reader.GetOrdinal("ModifiedAt"));
+        var deletedById = reader.IsDBNull(reader.GetOrdinal("DeletedById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("DeletedById"));
+        var deletedAt = reader.IsDBNull(reader.GetOrdinal("DeletedAt")) ? DateTime.MinValue : reader.GetDateTime(reader.GetOrdinal("DeletedAt"));
+        var createdOnBehalfById = reader.IsDBNull(reader.GetOrdinal("CreatedOnBehalfById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("CreatedOnBehalfById"));
+        var modifiedOnBehalfById = reader.IsDBNull(reader.GetOrdinal("ModifiedOnBehalfById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("ModifiedOnBehalfById"));
+
+        return new Account
+        {
+            Id = id,
+            Name = name,
+            Industry = industry,
+            Website = website,
+            ActionId = actionId,
+            CreatedById = createdById,
+            ModifiedById = modifiedById,
+            CreatedAt = createdAt,
+            ModifiedAt = modifiedAt,
+            DeletedById = deletedById,
+            DeletedAt = deletedAt,
+            CreatedOnBehalfById = createdOnBehalfById,
+            ModifiedOnBehalfById = modifiedOnBehalfById
+        };
+    }
+}
