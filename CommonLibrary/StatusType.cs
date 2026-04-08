@@ -1,32 +1,30 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Reflection;
+using System.Text;
 
 namespace CommonLibrary
 {
     public enum StatusType
     {
         [Display(Name = "Active")]
-        [Description("Active type indicates that the status of the record is currently active and in use. This status may indicate that the record is valid, operational, and can be interacted with or utilized within the system. Active records may be subject to regular updates, maintenance, and monitoring to ensure their continued functionality and relevance.")]
+        [Description("Active status means that the reference is Active and is not inactive, canceled or completed. An active reference is one that is currently in use or valid within the system. It indicates that the reference is currently being utilized or is available for use in the context of the application or system.")]
         Active,
         [Display(Name = "Inactive")]
-                [Description("Inactive type indicates that the status of the record is currently inactive and not in use. This status may indicate that the record is no longer valid, operational, or relevant within the system. Inactive records may be archived, retained for historical purposes, or subject to limited access and interaction.")]
+                [Description("Inactive status means that the reference is not currently active or in use. It indicates that the reference is temporarily or permanently unavailable for use within the system.")]
         Inactive,
         [Display(Name = "Pending")]
-        [Description("Pending type indicates that the status of the record is currently pending and awaiting further action or approval. This status may indicate that the record is in a transitional state, requiring additional information, review, or processing before it can be finalized or moved to another status.")]
+                [Description("Pending status means that the reference is awaiting action or approval. It indicates that the reference is in a temporary state and requires further processing or decision-making before it can be considered active or completed.")]
         Pending,
         [Display(Name = "Completed")]
-        [Description("Completed type indicates that the status of the record has been finalized and all necessary actions have been taken. This status may indicate that the record is no longer active but has reached a conclusion or resolution.")]
+                [Description("Completed status means that the reference has been successfully completed and is no longer active.")]
         Completed,
         [Display(Name = "Canceled")]
-        [Description("Canceled type indicates that the status of the record has been canceled and will not proceed further. This status may indicate that the record is no longer valid, operational, or relevant within the system.")] 
+                [Description("Canceled status means that the reference has been canceled and is no longer active.")]
         Canceled,
-        [Display(Name = "On Hold")]
-        [Description("On Hold type indicates that the status of the record is temporarily paused or suspended. This status may indicate that the record requires further review, additional information, or pending actions before it can proceed.")]
-        OnHold,
-        [Display(Name = "Deleted")]
-        [Description("Deleted type indicates that the status of the record has been removed or marked for deletion. This status may indicate that the record is no longer active, relevant, or accessible within the system.")]
-        Deleted,
         [Display(Name = "Unknown")]
-        [Description("Unknown type indicates that the status of the record is not known or has not been specified. This status may be used as a default or placeholder value when the actual status is unclear or unavailable.")]
+        [Description("Unknown status means that the reference status is not specified or cannot be determined.")]
         Unknown
     }
