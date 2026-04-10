@@ -9,7 +9,7 @@ namespace CommonLibrary
         [Description("Scheduled status indicates that the phone call is planned or arranged for a specific date and time. It may involve communication that is intended to occur in the future, such as appointments, meetings, or follow-ups that have been scheduled in advance.")]
         Scheduled,
         [Display(Name = "Completed")]
-        [Description("Completed status indicates that the phone call has been successfully conducted and concluded.")] 
+        [Description("Completed status indicates that the phone call has been successfully conducted and concluded.")]
         Completed,
         [Display(Name = "Canceled")]
         [Description("Canceled status indicates that the phone call has been canceled and will not take place as scheduled.")]
@@ -36,7 +36,7 @@ namespace CommonLibrary
         [Description("Left Voicemail status indicates that the phone call was not answered and a voicemail message was left for the recipient.")]
         LeftVoicemail,
         [Display(Name = "Not Answered")]
-                [Description("Not Answered status indicates that the phone call was not answered by the recipient.")]   
+        [Description("Not Answered status indicates that the phone call was not answered by the recipient.")]
         NotAnswered,
         [Display(Name = "Answered Elsewhere")]
         [Description("Answered Elsewhere status indicates that the phone call was answered by the recipient, but not at the expected location or device. It may involve communication that was received on a different phone, extension, or location than originally intended.")]
@@ -45,3 +45,4 @@ namespace CommonLibrary
         [Description("Unknown status indicates that the phone call status is not specified or cannot be determined.")]
         Unknown
     }
+}

@@ -20,7 +20,8 @@ namespace CommonLibrary
         [Display(Name = "Other")]
         [Description("Other reason indicates that the reason for the customer's satisfaction or dissatisfaction does not fall into the predefined categories.")]
         Other,
-        [Display(Name = "Unknown")] 
+        [Display(Name = "Unknown")]
         [Description("Unknown reason indicates that the reason for the customer's satisfaction or dissatisfaction is not specified or cannot be determined.")]
         Unknown
     }
+}

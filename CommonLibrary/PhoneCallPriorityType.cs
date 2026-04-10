@@ -18,7 +18,7 @@ namespace CommonLibrary
         [Description("Urgent priority indicates that the phone call requires immediate attention and action. It may involve critical matters or time-sensitive issues that need to be addressed without delay.")]
         Urgent,
         [Display(Name = "Critical")]
-        [Description("Critical priority indicates that the phone call is of utmost importance and requires immediate and decisive action. It may involve situations that have significant consequences or impact on business operations if not addressed promptly.")]   
+        [Description("Critical priority indicates that the phone call is of utmost importance and requires immediate and decisive action. It may involve situations that have significant consequences or impact on business operations if not addressed promptly.")]
         Critical,
         [Display(Name = "Routine")]
         [Description("Routine priority indicates that the phone call is of standard importance and can be addressed in the normal course of business. It may involve communication that does not require immediate attention or action.")]
@@ -36,3 +36,4 @@ namespace CommonLibrary
         [Description("Unknown priority indicates that the priority of the phone call is not specified or cannot be determined. It may involve communication that requires further assessment to determine the appropriate level of urgency or importance.")]
         Unknown
     }
+}

@@ -30,9 +30,10 @@ namespace CommonLibrary
         [Description("Time Sensitive priority indicates that the issue is important and requires attention within a specific timeframe. It may have a significant impact on the business or customer experience if not addressed within the specified timeframe, and it requires timely action to prevent further issues or damage.")]
         TimeSensitive,
         [Display(Name = "Non Urgent")]
-        [Description("Non Urgent priority indicates that the issue is of low importance and does not require immediate attention. It may have a minimal impact on the business or customer experience, and it can be addressed at a later time without significant consequences.")] 
+        [Description("Non Urgent priority indicates that the issue is of low importance and does not require immediate attention. It may have a minimal impact on the business or customer experience, and it can be addressed at a later time without significant consequences.")]
         NonUrgent,
         [Display(Name = "Unknown")]
         [Description("Unknown priority indicates that the priority level of the issue has not been determined or is not applicable. It may require further assessment or information to determine the appropriate priority level for resolution.")]
         Unknown
     }
+}

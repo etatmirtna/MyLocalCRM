@@ -24,3 +24,4 @@ namespace CommonLibrary
         [Description("Unknown status reason means that the stage status reason is not specified or cannot be determined.")]
         Unknown
     }
+}

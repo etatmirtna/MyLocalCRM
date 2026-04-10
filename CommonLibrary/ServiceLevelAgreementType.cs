@@ -21,3 +21,4 @@ namespace CommonLibrary
         [Description("Unknown service level agreement indicates that the service level is not specified or cannot be determined.")]
         Unknown
     }
+}

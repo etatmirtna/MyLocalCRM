@@ -30,3 +30,4 @@ namespace CommonLibrary
         [Category("Other")]
         Unknown
     }
+}

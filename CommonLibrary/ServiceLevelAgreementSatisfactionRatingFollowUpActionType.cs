@@ -6,7 +6,7 @@ namespace CommonLibrary
     public enum ServiceLevelAgreementSatisfactionRatingFollowUpActionType
     {
         [Display(Name = "Contact Customer")]
-                [Description("Contact Customer action indicates that the follow-up action involves reaching out to the customer.")]
+        [Description("Contact Customer action indicates that the follow-up action involves reaching out to the customer.")]
         ContactCustomer,
         [Display(Name = "Offer Refund")]
         [Description("Offer Refund action indicates that the follow-up action involves providing a refund to the customer.")]
@@ -24,3 +24,4 @@ namespace CommonLibrary
         [Description("Unknown action indicates that the follow-up action is not specified or cannot be determined.")]
         Unknown
     }
+}

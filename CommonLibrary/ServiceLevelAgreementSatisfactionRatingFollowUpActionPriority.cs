@@ -36,3 +36,4 @@ namespace CommonLibrary
         [Description("Unknown priority indicates that the priority of the follow-up action is not specified or cannot be determined.")]
         Unknown
     }
+}

@@ -42,3 +42,4 @@ namespace CommonLibrary
         [Description("Unknown type indicates that the vendor's classification or category is not known or has not been specified. This vendor may require further clarification or information to determine their specific classification and how they fit into the overall procurement strategy and vendor management processes of the organization.")]
         Unknown
     }
+}

@@ -27,3 +27,4 @@ namespace CommonLibrary
         [Description("Unknown resolution time indicates that the resolution time is not specified or cannot be determined.")]
         Unknown
     }
+}

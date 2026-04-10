@@ -3,22 +3,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CommonLibrary
 {
-    //public enum ServiceLevelAgreementSatisfactionRatingFollowUpActionType
-    //{
-    //    [Display(Name = "Phone Call")]
-    //    PhoneCall,
-    //    [Display(Name = "Email")]
-    //    Email,
-    //    [Display(Name = "Meeting")]
-    //    Meeting,
-    //    [Display(Name = "Task")]
-    //    Task,
-    //    [Display(Name = "Other")]
-    //    Other,
-    //    [Display(Name = "Unknown")]
-    //    Unknown
-    //}
-
     public enum RoleType
     {
         [Display(Name = "System Administrator")]
@@ -50,3 +34,4 @@ namespace CommonLibrary
         [Display(Name = "Unknown")]
         Unknown
     }
+}

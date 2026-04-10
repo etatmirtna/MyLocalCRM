@@ -21,3 +21,4 @@ namespace CommonLibrary
         [Description("Unknown role means that the role is not specified or cannot be determined.")]
         Unknown
     }
+}

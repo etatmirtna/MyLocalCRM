@@ -21,3 +21,4 @@ namespace CommonLibrary
         [Description("Unknown indicates that the direction of the email has not been determined or is not applicable. It may require further assessment or information to determine the appropriate classification for the email communication.")]
         Unknown
     }
+}

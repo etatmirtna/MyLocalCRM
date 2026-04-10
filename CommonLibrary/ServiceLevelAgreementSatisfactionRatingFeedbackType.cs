@@ -18,6 +18,7 @@ namespace CommonLibrary
         [Description("Other feedback indicates that the feedback provided by the customer does not fall into the predefined categories.")]
         Other,
         [Display(Name = "Unknown")]
-                [Description("Unknown feedback indicates that the feedback provided by the customer is not specified or cannot be determined.")]
+        [Description("Unknown feedback indicates that the feedback provided by the customer is not specified or cannot be determined.")]
         Unknown
     }
+}

@@ -51,3 +51,4 @@ namespace CommonLibrary
         [Description("Unknown status indicates that the current status of the email cannot be determined or is not applicable. It may require further investigation or information to determine the appropriate status for the email communication, and it may require monitoring or follow-up to ensure that any necessary actions are taken to resolve any issues or requests raised in the original email.")]
         Unknown
     }
+}

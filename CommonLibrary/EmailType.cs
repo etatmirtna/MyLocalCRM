@@ -40,7 +40,7 @@ namespace CommonLibrary
         Internal,
         [Display(Name = "External")]
         [Description("External type indicates that the email is intended for communication with external parties, such as customers, partners, vendors, or other stakeholders outside of the organization. It may include communication related to sales, support, marketing, or other external-facing activities and may require attention or response from the recipient to facilitate effective communication and relationship management with external stakeholders.")]
-        External,   
+        External,
         [Display(Name = "Training")]
         [Description("Training type indicates that the email is related to training activities, such as providing training materials, scheduling training sessions, or following up on training-related inquiries. It may require attention or response from the recipient to facilitate effective training and development initiatives within the organization.")]
         Training,
@@ -56,7 +56,7 @@ namespace CommonLibrary
         [Display(Name = "Emergency")]
         [Description("Emergency type indicates that the email is related to urgent or critical situations that require immediate attention and response from the recipient. It may include communication related to emergencies, crises, or other time-sensitive situations that necessitate prompt action to mitigate risks, ensure safety, or address critical issues effectively.")]
         Emergency,
-        [Display(Name ="Vendor")]
+        [Display(Name = "Vendor")]
         [Description("Vendor type indicates that the email is related to communication with vendors, such as inquiries, negotiations, or other communication related to vendor relationships. It may require attention or response from the recipient to facilitate effective communication and relationship management with vendors, ensuring successful procurement and supply chain operations.")]
         Vendor,
         [Display(Name = "Customer")]
@@ -150,7 +150,7 @@ namespace CommonLibrary
         [Description("Decision Making type indicates that the email is related to decision-making activities, such as discussing options, evaluating alternatives, or engaging in discussions to reach a decision. It may require attention or response from the recipient to actively participate in the decision-making process, provide input and perspectives, or simply engage in communication related to decision-making efforts to facilitate effective decision-making and successful outcomes for the organization.")]
         DecisionMaking,
         [Display(Name = "Strategy Planning")]
-        [Description("Strategy Planning type indicates that the email is related to strategy planning activities, such as discussing strategic goals, developing plans, or engaging in discussions to shape the strategic direction of the organization. It may require attention or response from the recipient to actively participate in the strategy planning process, provide insights and perspectives, or simply engage in communication related to strategy planning efforts to facilitate effective strategic planning and successful execution of organizational strategies.")]   
+        [Description("Strategy Planning type indicates that the email is related to strategy planning activities, such as discussing strategic goals, developing plans, or engaging in discussions to shape the strategic direction of the organization. It may require attention or response from the recipient to actively participate in the strategy planning process, provide insights and perspectives, or simply engage in communication related to strategy planning efforts to facilitate effective strategic planning and successful execution of organizational strategies.")]
         StrategyPlanning,
         [Display(Name = "Crisis Management")]
         [Description("Crisis Management type indicates that the email is related to managing a crisis or critical situation, such as addressing urgent issues, coordinating response efforts, or communicating with stakeholders during a crisis. It may require immediate attention and response from the recipient to facilitate effective crisis management, ensuring timely resolution of the crisis and minimizing negative impacts on the organization and its stakeholders.")]
@@ -165,7 +165,7 @@ namespace CommonLibrary
         [Description("Team Building type indicates that the email is related to team-building activities, such as organizing team events, providing team-building resources, or engaging in communication to foster team cohesion and camaraderie. It may require attention or response from the recipient to actively participate in team-building efforts, provide input and support, or simply engage in communication related to team building to facilitate a positive and collaborative team environment within the organization.")]
         TeamBuilding,
         [Display(Name = "Social")]
-        [Description("Social type indicates that the email is related to social activities, such as organizing social events, sharing social updates, or engaging in communication to foster social connections and relationships. It may require attention or response from the recipient to actively participate in social efforts, provide input and support, or simply engage in communication related to social activities to facilitate a positive and engaging social environment within the organization.")]    
+        [Description("Social type indicates that the email is related to social activities, such as organizing social events, sharing social updates, or engaging in communication to foster social connections and relationships. It may require attention or response from the recipient to actively participate in social efforts, provide input and support, or simply engage in communication related to social activities to facilitate a positive and engaging social environment within the organization.")]
         Social,
         [Display(Name = "Casual")]
         [Description("Casual type indicates that the email is related to casual communication, such as informal updates, friendly check-ins, or other communication that is not necessarily business-related. It may require attention or response from the recipient based on the nature of the relationship and communication context, but it generally represents a more relaxed and informal style of communication compared to other email types.")]
@@ -180,3 +180,4 @@ namespace CommonLibrary
         [Description("")]
         Unknown
     }
+}

@@ -24,3 +24,4 @@ namespace CommonLibrary
         [Description("Unknown account type.")]
         Unknown
     }
+}

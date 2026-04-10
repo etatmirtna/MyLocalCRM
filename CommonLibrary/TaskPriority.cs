@@ -36,3 +36,4 @@ namespace CommonLibrary
         [Description("A task with an unknown priority.")]
         Unknown
     }
+}

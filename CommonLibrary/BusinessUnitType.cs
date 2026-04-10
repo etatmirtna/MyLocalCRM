@@ -51,6 +51,7 @@ namespace CommonLibrary
         [Description("A business unit that does not fit into the other categories.")]
         Other,
         [Display(Name = "Unknown")]
-        [Description("Unknown")]   
+        [Description("Unknown")]
         Unknown
     }
+}

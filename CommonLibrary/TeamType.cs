@@ -6,7 +6,7 @@ namespace CommonLibrary
     public enum TeamType
     {
         [Display(Name = "Sales")]
-        [Description("Sales team type indicates that the team is responsible for sales-related activities, such as prospecting, lead generation, customer acquisition, and revenue generation. This team may be focused on driving sales growth, managing customer relationships, and achieving sales targets to contribute to the overall success of the organization.")]  
+        [Description("Sales team type indicates that the team is responsible for sales-related activities, such as prospecting, lead generation, customer acquisition, and revenue generation. This team may be focused on driving sales growth, managing customer relationships, and achieving sales targets to contribute to the overall success of the organization.")]
         Sales,
         [Display(Name = "Support")]
         [Description("Support team type indicates that the team is responsible for providing customer support and assistance, such as addressing customer inquiries, resolving issues, and ensuring customer satisfaction. This team may be focused on maintaining positive relationships with customers, providing timely and effective support, and contributing to the overall success of the organization by ensuring customer loyalty and retention.")]
@@ -54,3 +54,4 @@ namespace CommonLibrary
         [Description("Unknown team type indicates that the team's role or function within the organization is not known or has not been specified. This team may require further clarification or information to determine their specific responsibilities and how they fit into the overall organizational structure and strategy.")]
         Unknown
     }
+}

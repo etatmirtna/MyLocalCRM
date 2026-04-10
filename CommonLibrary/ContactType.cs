@@ -26,13 +26,13 @@ namespace CommonLibrary
         [Display(Name = "Financial")]
         [Description("Financial type indicates that the contact is responsible for handling financial communication and tasks for the associated account or organization. This contact may be responsible for managing financial inquiries, providing financial support, coordinating financial resources, and ensuring that financial-related matters are handled efficiently and effectively to support the needs of the account or organization while ensuring sound financial management practices.")]
         Financial,
-        [Display(Name = "Vendor")]      
-        [Description("Vendor type indicates that the contact is responsible for handling communication and tasks related to vendors for the associated account or organization. This contact may be responsible for managing vendor relationships, coordinating vendor communication, addressing vendor inquiries, and ensuring that vendor-related matters are handled efficiently and effectively to support the needs of the account or organization while maintaining positive relationships with vendors.")]   
+        [Display(Name = "Vendor")]
+        [Description("Vendor type indicates that the contact is responsible for handling communication and tasks related to vendors for the associated account or organization. This contact may be responsible for managing vendor relationships, coordinating vendor communication, addressing vendor inquiries, and ensuring that vendor-related matters are handled efficiently and effectively to support the needs of the account or organization while maintaining positive relationships with vendors.")]
         Vendor,
         [Display(Name = "Supplier")]
         [Description("Supplier type indicates that the contact is responsible for handling communication and tasks related to suppliers for the associated account or organization. This contact may be responsible for managing supplier relationships, coordinating supplier communication, addressing supplier inquiries, and ensuring that supplier-related matters are handled efficiently and effectively to support the needs of the account or organization while maintaining positive relationships with suppliers.")]
         Supplier,
-        [Display(Name = "Customer")]    
+        [Display(Name = "Customer")]
         [Description("Customer type indicates that the contact is responsible for handling communication and tasks related to customers for the associated account or organization. This contact may be responsible for managing customer relationships, coordinating customer communication, addressing customer inquiries, and ensuring that customer-related matters are handled efficiently and effectively to support the needs of the account or organization while maintaining positive relationships with customers.")]
         Customer,
         [Display(Name = "Security")]
@@ -43,11 +43,11 @@ namespace CommonLibrary
         HealthAndSafety,
         [Display(Name = "Cleaning")]
         [Description("Cleaning type indicates that the contact is responsible for handling communication and tasks related to cleaning for the associated account or organization. This contact may be responsible for managing cleaning-related inquiries, providing cleaning support, coordinating cleaning resources, and ensuring that cleaning-related matters are handled efficiently and effectively to support the needs of the account or organization while maintaining a clean environment.")]
-        Cleaning,  
-        
+        Cleaning,
+
         [Display(Name = "Groundskeeping")]
         [Description("Groundskeeping type indicates that the contact is responsible for handling communication and tasks related to groundskeeping for the associated account or organization. This contact may be responsible for managing groundskeeping-related inquiries, providing groundskeeping support, coordinating groundskeeping resources, and ensuring that groundskeeping-related matters are handled efficiently and effectively to support the needs of the account or organization while maintaining a well-kept environment.")]
-        Groundskeeping, 
+        Groundskeeping,
         [Display(Name = "Transportation")]
         [Description("Transportation type indicates that the contact is responsible for handling communication and tasks related to transportation for the associated account or organization. This contact may be responsible for managing transportation-related inquiries, providing transportation support, coordinating transportation resources, and ensuring that transportation-related matters are handled efficiently and effectively to support the needs of the account or organization while maintaining a reliable transportation system.")]
         Transportation,
@@ -56,7 +56,7 @@ namespace CommonLibrary
         Maintenance,
         [Display(Name = "Food Service")]
         [Description("Food Service type indicates that the contact is responsible for handling communication and tasks related to food service for the associated account or organization. This contact may be responsible for managing food service-related inquiries, providing food service support, coordinating food service resources, and ensuring that food service-related matters are handled efficiently and effectively to support the needs of the account or organization while maintaining a high-quality food service environment.")]
-        FoodService,   
+        FoodService,
         [Display(Name = "Marketing")]
         [Description("Marketing type indicates that the contact is responsible for handling communication and tasks related to marketing for the associated account or organization. This contact may be responsible for managing marketing-related inquiries, providing marketing support, coordinating marketing resources, and ensuring that marketing-related matters are handled efficiently and effectively to support the needs of the account or organization while maintaining a strong market presence.")]
         Marketing,
@@ -106,3 +106,4 @@ namespace CommonLibrary
         [Description("Unknown type indicates that the contact's role or relationship with the associated account or organization is not known or has not been specified. This contact may require further clarification or information to determine their specific responsibilities and how they fit into the overall communication and relationship management strategy for the account or organization.")]
         Unknown
     }
+}

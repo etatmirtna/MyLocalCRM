@@ -33,3 +33,4 @@ namespace CommonLibrary
         [Description("A task with an unknown status.")]
         Unknown
     }
+}

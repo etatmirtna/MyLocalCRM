@@ -24,3 +24,4 @@ namespace CommonLibrary
         [Description("Unknown status indicates that the case status is not recognized or has not been set.")]
         Unknown
     }
+}

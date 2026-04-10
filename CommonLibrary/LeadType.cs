@@ -30,3 +30,4 @@ namespace CommonLibrary
         [Description("Unknown type indicates that the lead's status or category is not known or has not been specified. This lead may require further clarification or information to determine their specific status and how they fit into the overall sales process and strategy.")]
         Unknown
     }
+}

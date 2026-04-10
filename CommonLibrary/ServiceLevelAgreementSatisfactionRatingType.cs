@@ -24,3 +24,4 @@ namespace CommonLibrary
         [Description("Unknown indicates that the customer's satisfaction rating is not specified or cannot be determined.")]
         Unknown
     }
+}

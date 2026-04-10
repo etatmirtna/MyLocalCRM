@@ -63,3 +63,4 @@ namespace CommonLibrary
         [Description("Unknown type indicates that the meeting's purpose or topic is not known or has not been specified. It may require further clarification or information to determine the appropriate handling and response for the meeting communication and collaboration.")]
         Unknown
     }
+}

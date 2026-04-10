@@ -36,3 +36,4 @@ namespace CommonLibrary
         [Description("Unknown priority indicates that the priority of the email has not been determined or is not applicable. It may require further assessment or information to determine the appropriate level of urgency for addressing the email communication.")]
         Unknown
     }
+}

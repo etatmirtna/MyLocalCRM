@@ -36,3 +36,4 @@ namespace CommonLibrary
         [Description("Unknown direction indicates that the phone call direction is not specified or cannot be determined.")]
         Unknown
     }
+}

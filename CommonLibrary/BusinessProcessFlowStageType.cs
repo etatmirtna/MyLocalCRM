@@ -15,7 +15,7 @@ namespace CommonLibrary
         [Description("The process of resolving a customer service case, including activities such as troubleshooting, providing solutions, and communicating with the customer.")]
         CaseResolution,
         [Display(Name = "Project Management")]
-        [Description("The process of managing a project from initiation to completion, including activities such as planning, execution, monitoring, and control.")]   
+        [Description("The process of managing a project from initiation to completion, including activities such as planning, execution, monitoring, and control.")]
         ProjectManagement,
         [Display(Name = "Other")]
         [Description("A stage type that does not fit into the other categories.")]
@@ -24,3 +24,4 @@ namespace CommonLibrary
         [Description("Unknown")]
         Unknown
     }
+}

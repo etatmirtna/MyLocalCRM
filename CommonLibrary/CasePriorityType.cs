@@ -27,7 +27,7 @@ namespace CommonLibrary
         [Description("Important priority indicates that the case is of significant importance and should be addressed promptly.")]
         Important,
         [Display(Name = "Time Sensitive")]
-        [Description("Time Sensitive priority indicates that the case requires attention within a specific timeframe to prevent negative impact.")] 
+        [Description("Time Sensitive priority indicates that the case requires attention within a specific timeframe to prevent negative impact.")]
         TimeSensitive,
         [Display(Name = "Non Urgent")]
         [Description("Non Urgent priority indicates that the case does not require immediate attention and can be addressed at a later time without significant impact.")]
@@ -36,3 +36,4 @@ namespace CommonLibrary
         [Description("Unknown priority indicates that the priority of the case is not specified or cannot be determined.")]
         Unknown
     }
+}

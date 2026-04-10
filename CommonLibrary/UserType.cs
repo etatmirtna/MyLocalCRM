@@ -6,7 +6,7 @@ namespace CommonLibrary
     public enum UserType
     {
         [Display(Name = "Administrator")]
-                [Description("Administrator type indicates that the user has full access to all system features and settings. This user can manage other users, configure system settings, and perform high-level administrative tasks.")]
+        [Description("Administrator type indicates that the user has full access to all system features and settings. This user can manage other users, configure system settings, and perform high-level administrative tasks.")]
         Admin,
         [Display(Name = "Standard User")]
         [Description("Standard User type indicates that the user has access to the system's standard features and functionalities. This user can perform regular tasks and operations but may have limited administrative privileges.")]
@@ -36,3 +36,4 @@ namespace CommonLibrary
         [Description("Unknown type indicates that the user's type is not specified or recognized. This user may have undefined or limited access to the system's features and functionalities.")]
         Unknown
     }
+}

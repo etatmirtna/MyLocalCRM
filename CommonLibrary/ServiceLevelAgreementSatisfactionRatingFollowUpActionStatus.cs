@@ -30,3 +30,4 @@ namespace CommonLibrary
         [Description("Unknown status indicates that the status of the follow-up action is not specified or cannot be determined.")]
         Unknown
     }
+}

@@ -16,9 +16,9 @@ namespace CommonLibrary
         Completed,
         [Display(Name = "Canceled")]
         [Description("Task has been canceled.")]
-        Canceled,  
+        Canceled,
         [Display(Name = "Deferred")]
-        [Description("Task has been deferred.")]    
+        [Description("Task has been deferred.")]
         Deferred,
         [Display(Name = "Waiting For Someone Else")]
         [Description("Task is waiting for someone else.")]
@@ -30,3 +30,4 @@ namespace CommonLibrary
         [Description("Task has an unknown status.")]
         Unknown
     }
+}

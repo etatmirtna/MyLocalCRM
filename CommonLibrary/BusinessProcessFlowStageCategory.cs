@@ -24,3 +24,4 @@ namespace CommonLibrary
         [Description("Unknown stage category means that the stage category is not specified or cannot be determined.")]
         Unknown
     }
+}

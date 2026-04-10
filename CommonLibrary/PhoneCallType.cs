@@ -60,10 +60,10 @@ namespace CommonLibrary
         [Description("Vendor type indicates that the phone call is related to interactions with vendors, suppliers, or external service providers.")]
         Vendor,
         [Display(Name = "Customer")]
-                [Description("Customer type indicates that the phone call is related to interactions with customers, clients, or potential clients.")]
+        [Description("Customer type indicates that the phone call is related to interactions with customers, clients, or potential clients.")]
         Customer,
         [Display(Name = "Partner")]
-                [Description("Partner type indicates that the phone call is related to interactions with business partners, collaborators, or strategic allies.")]
+        [Description("Partner type indicates that the phone call is related to interactions with business partners, collaborators, or strategic allies.")]
         Partner,
         [Display(Name = "Team")]
         [Description("Team type indicates that the phone call is related to interactions with team members, such as team meetings, collaboration, or internal communications.")]
@@ -72,7 +72,7 @@ namespace CommonLibrary
         [Description("Management type indicates that the phone call is related to interactions with management, such as meetings, updates, or strategic discussions.")]
         Management,
         [Display(Name = "Human Resources")]
-        [Description("Human Resources type indicates that the phone call is related to interactions with the HR department, such as recruitment, employee relations, or policy discussions.")]  
+        [Description("Human Resources type indicates that the phone call is related to interactions with the HR department, such as recruitment, employee relations, or policy discussions.")]
         HR,
         [Display(Name = "Finance")]
         [Description("Finance type indicates that the phone call is related to interactions with the finance department, such as budgeting, accounting, or financial planning.")]
@@ -105,7 +105,7 @@ namespace CommonLibrary
         [Description("Negotiation type indicates that the phone call is related to negotiating terms, agreements, or deals.")]
         Negotiation,
         [Display(Name = "Contract Discussion")]
-        [Description("Contract Discussion type indicates that the phone call is related to discussing contract terms, conditions, or agreements.")] 
+        [Description("Contract Discussion type indicates that the phone call is related to discussing contract terms, conditions, or agreements.")]
         ContractDiscussion,
         [Display(Name = "Product Demonstration")]
         [Description("Product Demonstration type indicates that the phone call is related to demonstrating a product, its features, or its benefits.")]
@@ -180,3 +180,4 @@ namespace CommonLibrary
         [Description("Unknown type indicates that the phone call type is not specified or cannot be determined.")]
         Unknown
     }
+}

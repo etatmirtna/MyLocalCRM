@@ -33,3 +33,4 @@ namespace CommonLibrary
         [Description("Unknown state indicates that the entity's state is not specified or cannot be determined.")]
         Unknown
     }
+}

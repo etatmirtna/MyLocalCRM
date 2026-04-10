@@ -30,3 +30,4 @@ namespace CommonLibrary
         [Description("Unknown response time indicates that the response time is not specified or cannot be determined.")]
         Unknown
     }
+}

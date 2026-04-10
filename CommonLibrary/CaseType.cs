@@ -24,3 +24,4 @@ namespace CommonLibrary
         [Description("Case is of unknown type.")]
         Unknown
     }
+}

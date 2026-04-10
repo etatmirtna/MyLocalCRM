@@ -27,3 +27,4 @@ namespace CommonLibrary
         [Description("Unknown relationship indicates that the entity's relationship is not specified or cannot be determined.")]
         Unknown
     }
+}

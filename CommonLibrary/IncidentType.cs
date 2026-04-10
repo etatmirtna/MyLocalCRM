@@ -27,3 +27,4 @@ namespace CommonLibrary
         [Description("Unknown type indicates that the incident's nature or category is not known or has not been specified. It may require further clarification or information to determine the appropriate handling and response for the incident.")]
         Unknown
     }
+}

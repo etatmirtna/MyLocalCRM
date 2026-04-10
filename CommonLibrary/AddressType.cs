@@ -15,7 +15,7 @@ namespace CommonLibrary
         [Description("Primary type indicates that the address is the main or primary address for the associated account or organization. This address is typically used for general communication and correspondence.")]
         Primary,
         [Display(Name = "Secondary")]
-                [Description("Secondary type indicates that the address is an additional or secondary address for the associated account or organization. This address may be used for specific purposes or as an alternative to the primary address.")]
+        [Description("Secondary type indicates that the address is an additional or secondary address for the associated account or organization. This address may be used for specific purposes or as an alternative to the primary address.")]
         Secondary,
         [Display(Name = "Other")]
         [Description("Other type indicates that the address does not fall into any of the predefined categories and may be used for miscellaneous or unspecified purposes.")]
@@ -54,7 +54,7 @@ namespace CommonLibrary
         [Description("Registered type indicates that the address is officially registered with the relevant authorities. This address may be associated with the registered contact and is typically used for legal and regulatory purposes.")]
         Registered,
         [Display(Name = "Main")]
-        [Description("Main type indicates that the address is the primary location or main office of the associated account or organization. This address is typically used for official communication and administrative purposes.")]  
+        [Description("Main type indicates that the address is the primary location or main office of the associated account or organization. This address is typically used for official communication and administrative purposes.")]
         Main,
         [Display(Name = "Sub")]
         [Description("Sub type indicates that the address is a secondary or subsidiary location of the associated account or organization. This address is typically used for additional communication and operational purposes.")]
@@ -63,3 +63,4 @@ namespace CommonLibrary
         [Description("Unknown type indicates that the address type is not specified or recognized. This address may be associated with an unknown contact and is typically used when the address type cannot be determined.")]
         Unknown
     }
+}

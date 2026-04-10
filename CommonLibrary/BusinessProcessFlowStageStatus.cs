@@ -21,3 +21,4 @@ namespace CommonLibrary
         [Description("Unknown status means that the stage status is not specified or cannot be determined.")]
         Unknown
     }
+}

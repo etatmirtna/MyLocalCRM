@@ -17,7 +17,8 @@ namespace CommonLibrary
         [Display(Name = "Other")]
         [Description("Other service level agreement indicates that the agreement is related to services that do not fall within the predefined categories.")]
         Other,
-        [Display(Name = "Unknown")] 
+        [Display(Name = "Unknown")]
         [Description("Unknown service level agreement indicates that the agreement is not specified or cannot be determined.")]
         Unknown
     }
+}

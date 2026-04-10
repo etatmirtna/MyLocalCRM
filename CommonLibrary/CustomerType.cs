@@ -33,7 +33,7 @@ namespace CommonLibrary
         [Description("Loyal type indicates that the customer has demonstrated consistent engagement, satisfaction, and commitment to the organization's products or services. This customer may be highly valuable and influential, often serving as a brand advocate or reference.")]
         Loyal,
         [Display(Name = "At Risk")]
-                [Description("At Risk type indicates that the customer is at risk of churning or discontinuing their relationship with the organization. This customer may require proactive engagement, support, and retention strategies to prevent churn.")]
+        [Description("At Risk type indicates that the customer is at risk of churning or discontinuing their relationship with the organization. This customer may require proactive engagement, support, and retention strategies to prevent churn.")]
         AtRisk,
         [Display(Name = "Churned")]
         [Description("Churned type indicates that the customer has discontinued their relationship with the organization. This customer may no longer engage with the organization's products or services and may require re-engagement strategies if the organization wishes to win them back.")]
@@ -45,3 +45,4 @@ namespace CommonLibrary
         [Description("Unknown type indicates that the customer's status or type is not known or has not been determined. This customer may require further investigation or data collection to accurately classify them.")]
         Unknown
     }
+}
