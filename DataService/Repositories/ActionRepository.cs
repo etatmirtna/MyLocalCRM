@@ -106,46 +106,45 @@ WHERE Id = @Id";
         await cmd.ExecuteNonQueryAsync();
     }
 
-+    private static void AddParameter(DbCommand cmd, string name, object? value)
-+    {
-+        var p = cmd.CreateParameter();
-+        p.ParameterName = "@" + name;
-+        p.Value = value ?? DBNull.Value;
-+        cmd.Parameters.Add(p);
-+    }
-+
-+    private static Action ReadAction(DbDataReader reader)
-+    {
-+        var id = reader.GetGuid(reader.GetOrdinal("Id"));
-+        var actionType = reader.GetString(reader.GetOrdinal("ActionType"));
-+        var description = reader.IsDBNull(reader.GetOrdinal("Description")) ? null : reader.GetString(reader.GetOrdinal("Description"));
-+        var performedByUserId = reader.IsDBNull(reader.GetOrdinal("PerformedByUserId")) ? null : reader.GetGuid(reader.GetOrdinal("PerformedByUserId"));
-+        var performedAt = reader.IsDBNull(reader.GetOrdinal("PerformedAt")) ? null : reader.GetDateTime(reader.GetOrdinal("PerformedAt"));
-+
-+        var createdById = reader.IsDBNull(reader.GetOrdinal("CreatedById")) ? null : reader.GetGuid(reader.GetOrdinal("CreatedById"));
-+        var modifiedById = reader.IsDBNull(reader.GetOrdinal("ModifiedById")) ? null : reader.GetGuid(reader.GetOrdinal("ModifiedById"));
-+        var createdAt = reader.GetDateTime(reader.GetOrdinal("CreatedAt"));
-+        var modifiedAt = reader.IsDBNull(reader.GetOrdinal("ModifiedAt")) ? null : reader.GetDateTime(reader.GetOrdinal("ModifiedAt"));
-+        var deletedById = reader.IsDBNull(reader.GetOrdinal("DeletedById")) ? null : reader.GetGuid(reader.GetOrdinal("DeletedById"));
-+        var deletedAt = reader.IsDBNull(reader.GetOrdinal("DeletedAt")) ? null : reader.GetDateTime(reader.GetOrdinal("DeletedAt"));
-+        var createdOnBehalfById = reader.IsDBNull(reader.GetOrdinal("CreatedOnBehalfById")) ? null : reader.GetGuid(reader.GetOrdinal("CreatedOnBehalfById"));
-+        var modifiedOnBehalfById = reader.IsDBNull(reader.GetOrdinal("ModifiedOnBehalfById")) ? null : reader.GetGuid(reader.GetOrdinal("ModifiedOnBehalfById"));
-+
-+        return new Action
-+        {
-+            Id = id,
-+            ActionType = actionType,
-+            Description = description,
-+            PerformedByUserId = performedByUserId,
-+            PerformedAt = performedAt,
-+            CreatedById = createdById,
-+            ModifiedById = modifiedById,
-+            CreatedAt = createdAt,
-+            ModifiedAt = modifiedAt,
-+            DeletedById = deletedById,
-+            DeletedAt = deletedAt,
-+            CreatedOnBehalfById = createdOnBehalfById,
-+            ModifiedOnBehalfById = modifiedOnBehalfById
-+        };
-+    }
+   private static void AddParameter(DbCommand cmd, string name, object? value)
+   {
+       var p = cmd.CreateParameter();
+       p.ParameterName = "@" + name;
+       p.Value = value ?? DBNull.Value;
+       cmd.Parameters.Add(p);
+   } 
+
+   private static Action ReadAction(DbDataReader reader)
+   {
+       var id = reader.GetGuid(reader.GetOrdinal("Id"));
+       var actionType = reader.GetString(reader.GetOrdinal("ActionType"));
+       var description = reader.IsDBNull(reader.GetOrdinal("Description")) ? null : reader.GetString(reader.GetOrdinal("Description"));
+       var performedByUserId = reader.IsDBNull(reader.GetOrdinal("PerformedByUserId")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("PerformedByUserId"));
+       var performedAt = reader.IsDBNull(reader.GetOrdinal("PerformedAt")) ? DateTime.MinValue : reader.GetDateTime(reader.GetOrdinal("PerformedAt"));
+       var createdById = reader.IsDBNull(reader.GetOrdinal("CreatedById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("CreatedById"));
+       var modifiedById = reader.IsDBNull(reader.GetOrdinal("ModifiedById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("ModifiedById"));
+       var createdAt = reader.GetDateTime(reader.GetOrdinal("CreatedAt"));
+       var modifiedAt = reader.IsDBNull(reader.GetOrdinal("ModifiedAt")) ? DateTime.MinValue : reader.GetDateTime(reader.GetOrdinal("ModifiedAt"));
+       var deletedById = reader.IsDBNull(reader.GetOrdinal("DeletedById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("DeletedById"));
+       var deletedAt = reader.IsDBNull(reader.GetOrdinal("DeletedAt")) ? DateTime.MinValue : reader.GetDateTime(reader.GetOrdinal("DeletedAt"));
+       var createdOnBehalfById = reader.IsDBNull(reader.GetOrdinal("CreatedOnBehalfById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("CreatedOnBehalfById"));
+       var modifiedOnBehalfById = reader.IsDBNull(reader.GetOrdinal("ModifiedOnBehalfById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("ModifiedOnBehalfById"));
+
+       return new Action
+       {
+           Id = id,
+           ActionType = actionType,
+           Description = description,
+           PerformedByUserId = performedByUserId,
+           PerformedAt = performedAt,
+           CreatedById = createdById,
+           ModifiedById = modifiedById,
+           CreatedAt = createdAt,
+           ModifiedAt = modifiedAt,
+           DeletedById = deletedById,
+           DeletedAt = deletedAt,
+           CreatedOnBehalfById = createdOnBehalfById,
+           ModifiedOnBehalfById = modifiedOnBehalfById
+       };
+   }
  }

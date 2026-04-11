@@ -1,0 +1,531 @@
+{
+    "source": "U.S. Bureau of Labor Statistics - Industries by Supersector and NAICS Code",
+    "source_url": "https://www.bls.gov/iag/tgs/iag_index_naics.htm",
+    "extracted_on": "2026-04-08",
+    "groups": [
+        {
+            "name": "Goods-Producing Industries",
+            "supersectors": [
+                {
+                    "name": "Natural Resources and Mining",
+                    "industries": [
+                        {
+                            "name": "Agriculture, Forestry, Fishing and Hunting",
+                            "naics": "11",
+                            "subindustries": [
+                                {
+                                    "name": "Crop Production",
+                                    "naics": "111"
+                                },
+                                {
+                                    "name": "Animal Production",
+                                    "naics": "112"
+                                },
+                                {
+                                    "name": "Forestry and Logging",
+                                    "naics": "113"
+                                },
+                                {
+                                    "name": "Fishing, Hunting and Trapping",
+                                    "naics": "114"
+                                },
+                                {
+                                    "name": "Support Activities for Agriculture and Forestry",
+                                    "naics": "115"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Mining, Quarrying, and Oil and Gas Extraction",
+                            "naics": "21",
+                            "subindustries": [
+                                {
+                                    "name": "Oil and Gas Extraction",
+                                    "naics": "211"
+                                },
+                                {
+                                    "name": "Mining (except Oil and Gas)",
+                                    "naics": "212"
+                                },
+                                {
+                                    "name": "Support Activities for Mining",
+                                    "naics": "213"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Construction",
+                    "industries": [
+                        {
+                            "name": "Construction",
+                            "naics": "23",
+                            "subindustries": [
+                                {
+                                    "name": "Construction of Buildings",
+                                    "naics": "236"
+                                },
+                                {
+                                    "name": "Heavy and Civil Engineering Construction",
+                                    "naics": "237"
+                                },
+                                {
+                                    "name": "Specialty Trade Contractors",
+                                    "naics": "238"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Manufacturing",
+                    "industries": [
+                        {
+                            "name": "Manufacturing",
+                            "naics": "31-33",
+                            "subindustries": [
+                                {
+                                    "name": "Food Manufacturing",
+                                    "naics": "311"
+                                },
+                                {
+                                    "name": "Beverage and Tobacco Product Manufacturing",
+                                    "naics": "312"
+                                },
+                                {
+                                    "name": "Textile Mills",
+                                    "naics": "313"
+                                },
+                                {
+                                    "name": "Textile Product Mills",
+                                    "naics": "314"
+                                },
+                                {
+                                    "name": "Apparel Manufacturing",
+                                    "naics": "315"
+                                },
+                                {
+                                    "name": "Leather and Allied Product Manufacturing",
+                                    "naics": "316"
+                                },
+                                {
+                                    "name": "Wood Product Manufacturing",
+                                    "naics": "321"
+                                },
+                                {
+                                    "name": "Paper Manufacturing",
+                                    "naics": "322"
+                                },
+                                {
+                                    "name": "Printing and Related Support Activities",
+                                    "naics": "323"
+                                },
+                                {
+                                    "name": "Petroleum and Coal Products Manufacturing",
+                                    "naics": "324"
+                                },
+                                {
+                                    "name": "Chemical Manufacturing",
+                                    "naics": "325"
+                                },
+                                {
+                                    "name": "Plastics and Rubber Products Manufacturing",
+                                    "naics": "326"
+                                },
+                                {
+                                    "name": "Nonmetallic Mineral Product Manufacturing",
+                                    "naics": "327"
+                                },
+                                {
+                                    "name": "Primary Metal Manufacturing",
+                                    "naics": "331"
+                                },
+                                {
+                                    "name": "Fabricated Metal Product Manufacturing",
+                                    "naics": "332"
+                                },
+                                {
+                                    "name": "Machinery Manufacturing",
+                                    "naics": "333"
+                                },
+                                {
+                                    "name": "Computer and Electronic Product Manufacturing",
+                                    "naics": "334"
+                                },
+                                {
+                                    "name": "Electrical Equipment, Appliance, and Component Manufacturing",
+                                    "naics": "335"
+                                },
+                                {
+                                    "name": "Transportation Equipment Manufacturing",
+                                    "naics": "336"
+                                },
+                                {
+                                    "name": "Furniture and Related Product Manufacturing",
+                                    "naics": "337"
+                                },
+                                {
+                                    "name": "Miscellaneous Manufacturing",
+                                    "naics": "339"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Service-Providing Industries",
+            "supersectors": [
+                {
+                    "name": "Trade, Transportation, and Utilities",
+                    "industries": [
+                        {
+                            "name": "Wholesale Trade",
+                            "naics": "42",
+                            "subindustries": [
+                                {
+                                    "name": "Merchant Wholesalers, Durable Goods",
+                                    "naics": "423"
+                                },
+                                {
+                                    "name": "Merchant Wholesalers, Nondurable Goods",
+                                    "naics": "424"
+                                },
+                                {
+                                    "name": "Wholesale Electronic Markets and Agents and Brokers",
+                                    "naics": "425"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Retail Trade",
+                            "naics": "44-45",
+                            "subindustries": [
+                                {
+                                    "name": "Motor Vehicle and Parts Dealers",
+                                    "naics": "441"
+                                },
+                                {
+                                    "name": "Furniture and Home Furnishings Stores",
+                                    "naics": "442"
+                                },
+                                {
+                                    "name": "Electronics and Appliance Stores",
+                                    "naics": "443"
+                                },
+                                {
+                                    "name": "Building Material and Garden Equipment and Supplies Dealers",
+                                    "naics": "444"
+                                },
+                                {
+                                    "name": "Food and Beverage Stores",
+                                    "naics": "445"
+                                },
+                                {
+                                    "name": "Health and Personal Care Stores",
+                                    "naics": "446"
+                                },
+                                {
+                                    "name": "Gasoline Stations",
+                                    "naics": "447"
+                                },
+                                {
+                                    "name": "Clothing and Clothing Accessories Stores",
+                                    "naics": "448"
+                                },
+                                {
+                                    "name": "Sporting Goods, Hobby, Book, and Music Stores",
+                                    "naics": "451"
+                                },
+                                {
+                                    "name": "General Merchandise Stores",
+                                    "naics": "452"
+                                },
+                                {
+                                    "name": "Miscellaneous Store Retailers",
+                                    "naics": "453"
+                                },
+                                {
+                                    "name": "Nonstore Retailers",
+                                    "naics": "454"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Transportation and Warehousing",
+                            "naics": "48-49",
+                            "subindustries": [
+                                {
+                                    "name": "Air Transportation",
+                                    "naics": "481"
+                                },
+                                {
+                                    "name": "Rail Transportation",
+                                    "naics": "482"
+                                },
+                                {
+                                    "name": "Water Transportation",
+                                    "naics": "483"
+                                },
+                                {
+                                    "name": "Truck Transportation",
+                                    "naics": "484"
+                                },
+                                {
+                                    "name": "Transit and Ground Passenger Transportation",
+                                    "naics": "485"
+                                },
+                                {
+                                    "name": "Pipeline Transportation",
+                                    "naics": "486"
+                                },
+                                {
+                                    "name": "Scenic and Sightseeing Transportation",
+                                    "naics": "487"
+                                },
+                                {
+                                    "name": "Support Activities for Transportation",
+                                    "naics": "488"
+                                },
+                                {
+                                    "name": "Postal Service",
+                                    "naics": "491"
+                                },
+                                {
+                                    "name": "Couriers and Messengers",
+                                    "naics": "492"
+                                },
+                                {
+                                    "name": "Warehousing and Storage",
+                                    "naics": "493"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Utilities",
+                            "naics": "22",
+                            "subindustries": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Information",
+                    "industries": [
+                        {
+                            "name": "Information",
+                            "naics": "51",
+                            "subindustries": [
+                                {
+                                    "name": "Publishing Industries (except Internet)",
+                                    "naics": "511"
+                                },
+                                {
+                                    "name": "Motion Picture and Sound Recording Industries",
+                                    "naics": "512"
+                                },
+                                {
+                                    "name": "Broadcasting (except Internet)",
+                                    "naics": "515"
+                                },
+                                {
+                                    "name": "Internet Publishing and Broadcasting",
+                                    "naics": "516"
+                                },
+                                {
+                                    "name": "Telecommunications",
+                                    "naics": "517"
+                                },
+                                {
+                                    "name": "Data Processing, Hosting, and Related Services",
+                                    "naics": "518"
+                                },
+                                {
+                                    "name": "Other Information Services",
+                                    "naics": "519"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Financial Activities",
+                    "industries": [
+                        {
+                            "name": "Finance and Insurance",
+                            "naics": "52",
+                            "subindustries": [
+                                {
+                                    "name": "Monetary Authorities - Central Bank",
+                                    "naics": "521"
+                                },
+                                {
+                                    "name": "Credit Intermediation and Related Activities",
+                                    "naics": "522"
+                                },
+                                {
+                                    "name": "Securities, Commodity Contracts, and Other Financial Investments and Related Activities",
+                                    "naics": "523"
+                                },
+                                {
+                                    "name": "Insurance Carriers and Related Activities",
+                                    "naics": "524"
+                                },
+                                {
+                                    "name": "Funds, Trusts, and Other Financial Vehicles",
+                                    "naics": "525"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Real Estate and Rental and Leasing",
+                            "naics": "53",
+                            "subindustries": [
+                                {
+                                    "name": "Real Estate",
+                                    "naics": "531"
+                                },
+                                {
+                                    "name": "Rental and Leasing Services",
+                                    "naics": "532"
+                                },
+                                {
+                                    "name": "Lessors of Nonfinancial Intangible Assets (except Copyrighted Works)",
+                                    "naics": "533"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Professional and Business Services",
+                    "industries": [
+                        {
+                            "name": "Professional, Scientific, and Technical Services",
+                            "naics": "54",
+                            "subindustries": []
+                        },
+                        {
+                            "name": "Management of Companies and Enterprises",
+                            "naics": "55",
+                            "subindustries": []
+                        },
+                        {
+                            "name": "Administrative and Support and Waste Management and Remediation Services",
+                            "naics": "56",
+                            "subindustries": [
+                                {
+                                    "name": "Administrative and Support Services",
+                                    "naics": "561"
+                                },
+                                {
+                                    "name": "Waste Management and Remediation Services",
+                                    "naics": "562"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Education and Health Services",
+                    "industries": [
+                        {
+                            "name": "Educational Services",
+                            "naics": "61",
+                            "subindustries": []
+                        },
+                        {
+                            "name": "Health Care and Social Assistance",
+                            "naics": "62",
+                            "subindustries": [
+                                {
+                                    "name": "Ambulatory Health Care Services",
+                                    "naics": "621"
+                                },
+                                {
+                                    "name": "Hospitals",
+                                    "naics": "622"
+                                },
+                                {
+                                    "name": "Nursing and Residential Care Facilities",
+                                    "naics": "623"
+                                },
+                                {
+                                    "name": "Social Assistance",
+                                    "naics": "624"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Leisure and Hospitality",
+                    "industries": [
+                        {
+                            "name": "Arts, Entertainment, and Recreation",
+                            "naics": "71",
+                            "subindustries": [
+                                {
+                                    "name": "Performing Arts, Spectator Sports, and Related Industries",
+                                    "naics": "711"
+                                },
+                                {
+                                    "name": "Museums, Historical Sites, and Similar Institutions",
+                                    "naics": "712"
+                                },
+                                {
+                                    "name": "Amusement, Gambling, and Recreation Industries",
+                                    "naics": "713"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Accommodation and Food Services",
+                            "naics": "72",
+                            "subindustries": [
+                                {
+                                    "name": "Accommodation",
+                                    "naics": "721"
+                                },
+                                {
+                                    "name": "Food Services and Drinking Places",
+                                    "naics": "722"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Other Services (except Public Administration)",
+                    "industries": [
+                        {
+                            "name": "Other Services (except Public Administration)",
+                            "naics": "81",
+                            "subindustries": [
+                                {
+                                    "name": "Repair and Maintenance",
+                                    "naics": "811"
+                                },
+                                {
+                                    "name": "Personal and Laundry Services",
+                                    "naics": "812"
+                                },
+                                {
+                                    "name": "Religious, Grantmaking, Civic, Professional, and Similar Organizations",
+                                    "naics": "813"
+                                },
+                                {
+                                    "name": "Private Households",
+                                    "naics": "814"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}{
+
+}

@@ -410,4 +410,26 @@ END
 
 -- NOTE: FKs are configured to reference Users/Actions/Accounts/Contacts/Leads. Soft-delete is implemented by setting DeletedAt (and optionally DeletedById) instead of deleting rows.
 
+-- WorkflowTickets (durable queue for workflow engine)
+IF NOT EXISTS (SELECT 1 FROM sys.tables t JOIN sys.schemas s ON t.schema_id = s.schema_id WHERE s.name = 'dbo' AND t.name = 'WorkflowTickets')
+BEGIN
+CREATE TABLE dbo.WorkflowTickets (
+    Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
+    InteractionId UNIQUEIDENTIFIER NOT NULL,
+    CurrentState NVARCHAR(100) NOT NULL DEFAULT 'Pending',
+    Priority INT NOT NULL DEFAULT 0,
+    RouteAttributesJson NVARCHAR(MAX) NULL,
+    NextProcessor NVARCHAR(200) NULL,
+    Attempts INT NOT NULL DEFAULT 0,
+    LockedBy NVARCHAR(200) NULL,
+    LockedAt DATETIME2 NULL,
+    CreatedAt DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME(),
+    DueAt DATETIME2 NULL,
+    CompletedAt DATETIME2 NULL,
+    ResultJson NVARCHAR(MAX) NULL
+);
+
+ALTER TABLE dbo.WorkflowTickets ADD CONSTRAINT FK_WorkflowTickets_Interaction FOREIGN KEY (InteractionId) REFERENCES dbo.Actions(Id);
+END
+
 PRINT 'CreateTables.sql completed.';

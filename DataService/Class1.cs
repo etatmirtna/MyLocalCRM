@@ -22,6 +22,10 @@ namespace DataService
             services.AddTransient<IPhoneCallRepository, PhoneCallRepository>();
             services.AddTransient<IChatRepository, ChatRepository>();
             services.AddTransient<IUserRepository, UserRepository>();
+            // Workflow engine and routing
+            services.AddSingleton<IRouter, SimpleRouter>();
+            services.AddTransient<IInteractionHandler, DataService.Workflow.DefaultHandler>();
+            services.AddHostedService<DataService.Workflow.WorkflowEngine>();
 
             return services;
         }

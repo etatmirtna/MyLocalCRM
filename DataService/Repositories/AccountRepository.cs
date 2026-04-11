@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Threading.Tasks;
+using CommonLibrary;
 using DataService.Models;
 
 namespace DataService.Repositories;
@@ -24,7 +25,7 @@ VALUES (@Id, @Name, @Industry, @Website, @ActionId, @CreatedById, @ModifiedById,
         await conn.OpenAsync();
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = sql;
-        AddParameter(cmd, "Id", account.Id);
+        AddParameter(cmd, "Id", account.AccountId);
         AddParameter(cmd, "Name", account.Name);
         AddParameter(cmd, "Industry", (object?)account.Industry ?? DBNull.Value);
         AddParameter(cmd, "Website", (object?)account.Website ?? DBNull.Value);
@@ -123,9 +124,9 @@ WHERE Id = @Id";
     /// <returns>An Account object populated with values from the current row of the reader.</returns>
     private static Account ReadAccount(DbDataReader reader)
     {
-        var id = reader.GetGuid(reader.GetOrdinal("Id"));
+        var id = reader.GetGuid(reader.GetOrdinal("AccountId"));
         var name = reader.GetString(reader.GetOrdinal("Name"));
-        var industry = reader.IsDBNull(reader.GetOrdinal("Industry")) ? null : reader.GetString(reader.GetOrdinal("Industry"));
+        var industry = reader.IsDBNull(reader.GetOrdinal("Industry")) ? IndustryType.Unknown : Enum.Parse<IndustryType>(reader.GetString(reader.GetOrdinal("Industry")));
         var website = reader.IsDBNull(reader.GetOrdinal("Website")) ? null : reader.GetString(reader.GetOrdinal("Website"));
         var actionId = reader.IsDBNull(reader.GetOrdinal("ActionId")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("ActionId"));
         var createdById = reader.IsDBNull(reader.GetOrdinal("CreatedById")) ? Guid.Empty : reader.GetGuid(reader.GetOrdinal("CreatedById"));
@@ -139,7 +140,7 @@ WHERE Id = @Id";
 
         return new Account
         {
-            Id = id,
+            AccountId = id,
             Name = name,
             Industry = industry,
             Website = website,
